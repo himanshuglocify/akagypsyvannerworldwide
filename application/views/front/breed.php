@@ -1,0 +1,163 @@
+
+ <!-- Header -->     
+    <header class="inner-page-bg">
+        <div class="container">
+            <div class="inner-title">
+                <span><?php echo $page_title; ?></span>
+               
+            </div>
+        </div>
+    </header>
+    
+<!-- Breeding Starts -->
+ <section class="section-03">
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12 why-title md-space">     
+     <div class="breeding-text">
+      <span class="inner-breeding">Breeding</span> Breed your own Champion! Choosing both Sire and Dam personally! <a href="<?php echo  base_url(); ?>index.php/home/terms_conditions/breeding">learn more...</a>
+         
+     </div>   
+    </div>    
+   </div>
+   <?php
+		if(isset($_REQUEST['emp']))
+		{
+			?>
+			<div class="row md-space">    
+    <div class="col-md-12 col-sm-12 col-xs-12 md-space"> 
+	<p style="color:red;">Please select horse from both the side.<p>
+	</div>
+	</div>
+			<?php
+		}
+	   if($info != '')
+	   {
+			?>
+	<div class="row md-space">    
+    <div class="col-md-12 col-sm-12 col-xs-12 md-space"> 
+	<p style="color:red;"><?php echo $info; ?><p>
+	</div>
+	</div>
+			<?php 
+	   }
+   ?>
+   
+   <?php echo form_open('breed/checkoutBreed'); ?>
+   <div class="row md-space">    
+    <span><?php if($this->session->flashdata('breed_msg')){ echo $this->session->flashdata('breed_msg'); }?></span>
+    <div class="col-md-12 col-sm-12 col-xs-12 md-space">     
+     <div class="col-md-6 col-sm-6 col-xs-12 product-list">
+      <div class="breeding01">
+       <span class="stallion">stallion<span>
+	   
+       <select class="stallion-input" id="male_horse_drop_id" onChange="getHorsesize(this,'male','size');">
+        <option value="volvo">Select a Horse Size</option>
+		<option value="small">Up to 12hh</option>
+		<option value="medium">12hh to 14hh</option>
+		<option value="large">14hh+</option>
+       </select>       
+      </div>
+      <div class="size-titlebree">
+       <ul class="col-md-12 col-sm-12 col-xs-12 horse-detai-ul" id="male_horse_size_id">
+        </ul>
+        
+      </div>
+     
+     </div>
+     <div class="col-md-6 col-sm-6 col-xs-12 product-list">
+      <div class="breeding01">
+       <span class="stallion">mare<span>
+          
+       <select class="stallion-input" id="female_horse_drop_id" onChange="getHorsesize(this,'female','size');">
+        <option id="femailsel_derop" value="volvo">Select a Horse Size</option>
+		<option value="small">Up to 12hh</option>
+		<option value="medium">12hh to 14hh</option>
+		<option value="large">14hh+</option>
+       </select>       
+      </div>
+      <div class="size-titlebree">
+       <ul class="col-md-12 col-sm-12 col-xs-12 horse-detai-ul" id="female_horse_size_id">
+       
+       </ul>
+            
+      </div>
+      
+     </div>     
+    </div>
+	<div class="col-md-6 col-sm-6 col-xs-6 md-space">
+	</div>
+	<?php if($this->session->userdata('user_id')) { ?>
+	<div class="col-md-6 col-sm-6 col-xs-6 md-space">
+		<div class="final_price"></div><input type="submit" class="btn btn-primary pull-right term-button"  name="check" value="Checkout" />
+	   </div>
+	   <?php }else{ ?>
+         </div>
+   <div class="col-md-12 trial-box-text">                           
+										<span class="trial-price-msg">YOU MUST LOG IN AS USER TO SEE PRICES!</span>
+									</div><?php }
+         ?>
+   </div>
+
+	<?php echo form_close(); ?>
+   
+  
+ </section>   
+ <!-- Breeding Ends -->
+ <script>
+$(document).ready(function(){
+	$('#male_horse_drop_id').val('medium').trigger('change');
+	$( ".breed_btn_check .breed_sel_male" ).live( "click", function() {
+		if($('.breed_sel_female').is(':checked') && $('.breed_sel_male').is(':checked')){
+			var p1 = $(this).val();
+			var p2 = $('.breed_btn_check input[name=breed_sel_female]:checked').val();
+			var h1_price = $('div#hor_'+p1+' #price').val();
+			var h2_price = $('div#hor_'+p2+' #price').val();
+			var final_price = parseInt(h1_price)+parseInt(h2_price);
+			$('.final_price').html('Your Price with delivery is: $'+final_price);
+		}else{
+			$('.final_price').html('');
+		}
+	});	
+	$( ".breed_btn_check .breed_sel_female" ).live( "click", function() {
+		if($('.breed_sel_female').is(':checked') && $('.breed_sel_male').is(':checked')){
+			var p1 = $(this).val();
+			var p2 = $('.breed_btn_check input[name=breed_sel_male]:checked').val();
+			var h1_price = $('div#hor_'+p1+' #price').val();
+			var h2_price = $('div#hor_'+p2+' #price').val();
+			var final_price = parseInt(h1_price)+parseInt(h2_price);
+			$('.final_price').html('Your Price with delivery is: $'+final_price);
+		}else{
+			$('.final_price').html('');
+		}
+	});	
+});
+
+ function getHorsesize(arg,gender_group,field)
+ {
+	 var selval = arg.value;
+	 var tval = '<?php echo $this->security->get_csrf_hash();?>';
+	 var tval1 = '<?php echo $this->security->get_csrf_hash(); ?>';
+	 $('.final_price').html('');
+	 loadHorsesize(selval,gender_group,field,tval,tval1);
+ }
+	function showHorsedetails(arg)
+	{
+			var tval = '';
+			var pid = jQuery(arg).attr('tel');
+			tval = '<?php echo $this->security->get_csrf_hash();?>';
+			$.ajax({
+                url: base_url+'index.php/breed/singleproduct/'+pid, // form action url
+				data:{'token':tval},				
+                type: 'POST', // form submit method get/post
+				dataType: 'html', // request type html/json/xml
+                success: function(msg) {
+                    jQuery('#horse_details').html(msg);
+				},
+                error: function(e) {
+                    console.log(e)
+                }
+            });
+	}	
+	
+ </script>

@@ -1,0 +1,685 @@
+ 
+/*	Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300|Roboto:700,300,100);
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+body {font-family: 'Open Sans', sans-serif;background:url(../../../../uploads/desgin/ptrn.png) repeat;}
+
+/* TOP NAVIGATION */
+header {margin: 0px 0 !important;}
+.navbar-default {border-color: transparent; /* background:rgba(0,0,0,0.8); */ background:rgba(30,42,65, 0.9); height:95px; margin-top:15px;}
+.navbar-brand {background:url(../../../../uploads/desgin/logo.png) no-repeat;width:167px;height:168px;margin-top: -15px;}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {color:#0ff;}
+.navbar-default .navbar-toggle {background-color: #ed1c24;}
+.navbar-default .navbar-toggle .icon-bar {background-color: #fff;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #ed1c24;}
+.navbar-default .nav li a,.navbar-default .nav li a {color: #fff; font-size:14px; text-transform:uppercase; padding:0px 15px; line-height:95px;}
+.navbar-default .nav li:last-child a {padding-right:0px;}
+.navbar-default .nav li a:hover, .navbar-default .nav li a:focus {outline: 0; color: #ed1c24;}
+.navbar-default .nav li.buy_button a:hover, .navbar-default .nav li.buy_button a:focus {outline: 0;color: fff;}
+/*.navbar-fixed-top, .navbar-fixed-bottom {position: absolute;}*/
+.navbar-fixed-top, .navbar-fixed-bottom {position: absolute;}
+
+
+/* ** Using Css For Header Scrolling ** */
+ @media screen and (max-width: 991px){
+.navbar-default{background: rgba(0,0,0,0.8); padding:2px 10px; height: 70px; margin-top: 0;}
+.navbar-default .navbar-brand{background-size: 70% auto; width:167px; height:130px; margin-top: 0px;}
+.navbar-default .nav li a{color:#fff; text-align:center; background:none;border-bottom: 1px solid #000; line-height:35px;}
+.navbar-header {float: none; }
+.navbar-toggle {display: block;}
+.navbar-collapse {box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);}
+.navbar-collapse.collapse {display: none!important;}
+.navbar-nav {float: none!important; background:rgba(0,0,0,0.8);}
+.navbar-nav>li {float: none;}
+.navbar-nav>li>a {padding-top: 10px; padding-bottom: 10px;}
+/* since 3.1.0 */
+.navbar-collapse.collapse.in {display: block!important;}
+.navbar-toggle {margin-top: 13px;}
+.navbar-nav { margin: 0 -15px;}
+
+}
+/* TOP NAVIGATION */
+
+/* BAnner Part Starts here */
+.md-space{padding:0px;}
+.banner-bg{background:url(../../../../uploads/desgin/banner.png) top center no-repeat; height:697px;}
+.login-part{margin:0px; padding:0px;}
+.login-part li,.login-part li a{list-style:none; display:inline; color: #fff; font-size:14px; text-transform:uppercase; padding:0px 5px; line-height:95px;}
+.login-part li a:hover{color: #ed1c24; text-decoration:none;}
+.banner-title{font-size:13em; text-shadow:0 0 5px #000; color:#fff; font-weight:100; text-align:center; padding-top:220px; font-family: 'Julius Sans One', sans-serif;}
+
+/* BAnner Part Starts here */
+
+/* HORSES FOR SaLe Starts */
+.horse-sale-title{background:#e9ead6; padding:70px 40px; position:relative; margin-top:-90px;}
+.sale-title{font-size:30px; color:#333333; font-weight:300; text-transform:uppercase;}
+.sale-content{font-size:20px; color:#333333;padding-top:40px; font-weight:300;}
+.sale-content-h{font-size:16px; color:#333333;padding-top:20px; font-weight:300;}
+.read-more{padding-top:40px; margin:0 auto;}
+.more-button{background:#a52618; padding:10px 25px; color:#fff; text-decoration:none;}
+.more-button:hover{background:#333333; color:#fff; text-decoration:none;}
+.product-list01{padding-top:23px;}
+.top-space-button{padding-top:37px; padding-right: 15px;}
+/* HORSES FOR SaLe Ends */
+
+/* Why Not to try our Game Starts */
+.section-02{background:#e9ead6; padding:80px 0; margin-top:70px;}
+.why-title{font-size:36px;color:#333333; font-weight:300; text-transform:uppercase;}
+.why-content{font-size:16px; color:#333; width:95%; line-height:26px; padding:20px 0;}
+/* Why Not to try our Game ENDS */
+
+/* Breeding Starts */
+.section-03{padding:70px 0;}
+.product-img{padding-top:30px;}
+.breeding-text{font-size:16px; color:#333; padding-top:5px; text-transform:none;}
+.product-list{padding-top:30px;}
+.horse-name {background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0; color: #fff; font-size: 16px;  height: 40px; line-height: 40px; margin-top: -45px; position: relative; padding:0 10px; text-transform: uppercase; width: 371px; z-index: 999; overflow:hidden;}
+.location{text-align:right; float:right; width: 50%;}
+.arrow-button{padding-right: 15px;}
+#login {
+    z-index: 99999;
+}
+.onhover-text{}
+.h-name01{font-size:22px; text-transform:uppercase; font-weight:300;}
+.h-age01{font-size:16px; text-transform:uppercase; border-bottom:1px solid #fff; padding-top:10px; padding-bottom:10px;}
+.see-card{padding:6px 30px !important; color:#fff; text-decoration:none; margin-top:20px; float:left; text-transform:uppercase; font-size:14px; border:1px solid #fff;}
+
+/* Show text on hover */
+.photo-grid {padding: 0; margin: 0;}
+.photo-grid li {display: inline-block; width:100%;}
+.photo-grid img {display: block;	height: auto;width: 371px;}
+.photo-grid figure {height: 237px;overflow: hidden;position: relative;width: 371px;}
+.photo-grid figcaption {background: rgba(0,0,0,0.8);color: white;display: table;height: 100%;width:100%; left: 0;	opacity: 0;position: absolute;right: 0;	top: 0;	z-index: 9999;}
+.photo-grid figcaption div {display: table-cell; position: relative; top: -5px; vertical-align: middle; padding:0px 20px;}
+.photo-grid li:hover figcaption {opacity: 9; background:#000;}
+.photo-grid img {display: block;	height: auto;-webkit-transition: all 300ms;	-moz-transition: all 300ms;
+transition: all 300ms; max-width: 100%;}
+.photo-grid li:hover img {	-webkit-transform: scale(1.4);-moz-transform: scale(1.4);transform: scale(1.4); cursor:pointer;}
+
+.photo-grid li:hover figcaption.horse-name{display:none;}
+
+/* Show text on hover */
+header p {color: #fff !important;}
+.about-trext {
+  font-size: 14px;
+  line-height: 20px;
+}
+#full-slider-wrapper {padding: 0px !important;}
+/* Breeding Ends */
+/* Breeding Page Css */
+.breeding01{background:#333333; border-left:5px solid #a52618; padding:15px 15px;}
+.stallion{font-size:16px; color:#fff; text-transform:uppercase;}
+.stallion-input{border:1px solid #fff; height:32px; float:right; background:#333333; margin-top:-4px; width:50%; color:#fff; font-size:14px;}
+.size-titlebree{margin-top:25px;}
+.disable-button{padding-top:15px;}
+.disable-box{text-transform:uppercase;}
+.disable-box input{margin-right:10px; float:left;}
+/* Bredding Page Css */
+
+
+
+/* PRICING OPTIONS */
+.pricing-section{background:#e9ead6; padding:80px 0px;}
+.top-space03{padding-top:40px;}
+.register-button{ background: #333; color: #fff; padding: 10px 25px; text-decoration: none; text-transform:uppercase;  text-decoration:none;}
+.register-button:hover{ background: #a52618; color: #fff; text-decoration:none;}
+.basic-title{font-size:20px; font-weight:bold; color:#fff; background:#333333; border-bottom:1px solid #fff; padding:20px 0px;}
+/*============================================================
+BACKGROUND COLORS
+============================================================*/
+/* .db-bk-color-one {background-color: #f55039;}
+.db-bk-color-two {background-color: #46A6F7;}
+.db-bk-color-three {background-color: #47887E;}
+.db-bk-color-six {background-color: #F59B24;} */
+/*============================================================
+PRICING STYLES
+==========================================================*/
+	.db-padding-btm {padding-bottom: 50px;}
+	.db-button-color-square {color: #fff; background-color: rgba(0, 0, 0, 0.50);  border: none;   border-radius: 0px;  -webkit-border-radius: 0px; -moz-border-radius: 0px;}
+	.db-button-color-square:hover {color: #fff; background-color: rgba(0, 0, 0, 0.50); border: none;}
+	.db-pricing-eleven {margin-bottom: 30px; margin-top: 50px; text-align: center; color: #fff; line-height: 30px;}
+	.db-pricing-eleven ul {list-style: none; margin: 0; padding:0px; text-align: left; background:rgba(255, 255, 255, 0.3);}
+	.db-pricing-eleven ul li {border-bottom: 1px solid #f5f5f5; color: #86878b; cursor: pointer; padding: 10px 0px 10px 30px; text-transform:uppercase; /* background:url(../img/price-arrow.png) left center no-repeat; */}
+    .db-pricing-eleven ul li i { margin-right: 5px;}
+    .db-pricing-eleven .price {background:#333333;padding: 40px 20px 20px 20px;font-size: 60px;
+    font-weight: 900;color: #FFFFFF;}
+    .db-pricing-eleven .price small {color: #B8B8B8;display: block;font-size: 12px; margin-top: 22px;font-style:italic;}
+    .db-pricing-eleven .type {background-color: #a52618; padding: 5px 20px;font-weight: bold;     text-transform: uppercase;  font-size: 14px;}
+    .db-pricing-eleven .pricing-footer {padding: 20px;}
+	.db-attached > .col-lg-4,
+	.db-attached > .col-lg-3,
+	.db-attached > .col-md-4,
+	.db-attached > .col-md-3,
+	.db-attached > .col-sm-4,
+	.db-attached > .col-sm-3 {padding-left: 0;padding-right: 0;}
+	.db-pricing-eleven.popular {margin-top: 10px;}
+	.db-pricing-eleven.popular .price {padding-top: 50px;}
+/* PRICING OPTIONS Ends */
+
+.top-search-div{float: right; margin-top: -33px; margin-right: -12px;  position: relative;
+    z-index: 9999;}
+
+/* Footer Section */
+.footer-section{padding:80px 0; background: rgba(255,255,255,0.3);}
+.footer-logo{width:100%;}
+.address-t{margin:0px; padding:20px 0;}
+.address-t li{font-size:13px; line-height:24px; color:#6f6f6f; list-style:none;text-align: left;}
+
+.address-t li img{padding-right:10px;}
+.search-div{font-size:16px; color:#555555; text-transform:uppercase;}
+.stay-text{color:#a3a2a2; font-size:11.95px; text-transform:none; padding-top:10px;}
+.search-f{border-radius:30px; border:1px solid #ccc; width:370px; height:50px; margin-top:20px; padding:2px;}
+.input-box{width:220px; height:42px; border:none; padding-left:10px; font-size:11.95px;color:#000; text-transform:uppercase; float:left; background:none; outline:none;}
+.input-button{background:#a52618; height:44px; border:none; border-radius:30px; width:115px;font-size:13px;color:#fff; text-transform:uppercase; outline:none; float:right; font-weight:bold;}
+
+.footer-link{margin:0px; padding:10px 16px;}
+.footer-link li{line-height:24px;}
+.footer-link li a{font-size:13px; color:#6f6f6f; text-transform:none; text-decoration:none;}
+.footer-link li a:hover{color:#a52618; text-decoration:none;}
+
+.media-icon{color:#333333 !important; font-size:40px !important; padding-top:20px;}
+.footer-co{background:#e9ead6; padding:20px 0;}
+.reserved{font-size:11.95px; color:#a3a2a2;}
+/* Footer Section Ends */
+/*breeding page*/
+.breed_horse > img {width: 92px;}
+.breed_horse {float: left; height: 92px; width: 20%;}
+.horse-detai-ul > li {clear: both;}
+.horse-detai-ul > li {clear: both; float: left; padding: 10px 0px; width: 100%; color:#333 !important;}
+.horse-detai-ul .breed_btn_check{float:right; margin-right:10px;}
+.horse-detai-ul .showHorsedetails{line-height: 31px;margin-top:15px;}
+/* inner Page CSS */
+.inner-page-bg{background:url(../../../../uploads/desgin/inner-banner.png) top center no-repeat; height:232px;}
+.inner-title{font-size:40px; color:#fff; font-weight:100; text-align:center; margin-top:150px; font-family: 'Julius Sans One', sans-serif; position:relative; z-index:10; line-height:20px;}
+.inner-title a{font-size:16px; color:#fff;}
+.inner-title a:hover{font-size:16px; color:#fff; text-decoration:none;}
+.innerbanner-title{font-size:16px; color:#fff; font-weight:600;}
+.filter-by {height: 36px;width: 250px;background: none; border: 1px solid #000;}
+.inner-breeding{font-size:30px; color:#333333; text-transform:uppercase; padding-right:100px;}
+#submit_fil {border-radius: 0px; height: 36px; margin-top: -3px;}
+
+.page-number{padding-top:40px;}
+.page-number ul{margin:0px; padding:0px;}
+.page-number ul li{list-style:none; display:inline;}
+.page-number ul li a, .page-number ul li a:link{color:#fff; font-size:12px; background:#333333; border-radius:5px; padding:2px 8px; text-transform:uppercase;}
+.page-number ul li a:hover{color:#fff; text-decoration:none; background:#a52618;}
+.page-number ul li a.active{color:#fff; text-decoration:none; background:#a52618;}
+
+.filter-title{font-size:16px; text-transform:uppercase;}
+.filter-select{padding:30px 0px 0 0;}
+
+/* Horse Detail Page Css */
+.product-tabs img{max-width:100%;}
+.product-link{padding:0 0 50px 4px; width:100%}
+.product-link a{font-size:12px;color:#a3a2a2; font-family:arial; color:#a3a2a2; padding:0 0 50px 10px;}
+.product-title-in{padding-left:10px;}
+.tennis-lessons {font-size: 16px;padding: 10px 0;}
+.star{}
+.customer-text{color:#333; font-size:14px; padding:0px 0 20px 0px; width:100%;}
+.trial-box{width:260px; padding-left:5px; height:50px;outline:none; border:1px solid #cfcfcf; margin-top:10px; color:#a3a2a2; font-size:15px; margin-bottom:10px;}
+.trial-box-text{padding-bottom:10px;}
+.trial-price-msg {
+    color: red;
+    font-size: 18px;
+    line-height: 18px;
+}
+.btn-block.btn-labeled.btn-u-update {
+    width: 110px;
+}
+.trial-price{font-size:26px; font-weight:300; color:#a52618; margin-right: 15px; padding-top: 8px; float: left;}
+.adtocart-co{margin-top:10px;}
+.cart-button{background:#fff; border:1px solid #a52618; border-radius:30px;padding:12px 15px; text-align:center; color:#000; font-weight:600; font-size:14px; float:left; margin-left:0px;margin-top: 4px;}
+.cart-button:hover{background:#a52618;color:#fff;text-decoration:none;}
+.rounded-title { color: #a52618; font-size: 36px;}
+
+.horse-detai-ul{margin:0 0 20px 0px; padding:0px;}
+.horse-detai-ul li{list-style:none; color:#333; font-size:16px; border-bottom:1px solid #989898; line-height:36px;}
+.thumb-img img{padding-right:7px; padding-top:15px;}
+.title-sp-in{padding-bottom:50px;}
+
+
+/* Terms & Conditions  */
+.term-title{color:#a52618; text-transform:uppercase; font-size:16px; font-weight:300;}
+.term-button{background:#a52618; height:44px; border:none; border-radius:30px; width:115px;font-size:13px;color:#fff; text-transform:uppercase; outline:none; float:right; font-weight:bold;}
+.term-check{float:left; margin-right:10px !important;}
+
+
+/*added for the homepage middle section start here*/
+.horse-sale-tab {margin:0px; padding:0px;}
+.horse-sale-tab li{list-style:none; display:inline; margin: 14px 0 0 7px !important; float:left;}
+.horse-sale-tab li a{background:#e9ead6; padding:12px 12px; text-decoration:none; color:#000; font-size:18px; text-transform:uppercase; border:1px solid #d4d4d4;float: left; width:185px; text-align:center;}
+.horse-sale-tab li a:hover{background:#a52618; color:#fff; border:1px solid #e9ead6;}
+.horse-sale-tab li a.active{background:#a52618; color:#fff; border:1px solid #e9ead6;}
+.owl-cat-1 {margin: 14px 0 0 7px !important;;}
+.owl-cat-wrapper { clear: both; margin-top: 19px; margin-bottom: 15px; padding: 4px 0 13px 0;
+  float: left;}
+.owl-carousel.owl-theme.horse-sale-tab {  clear: both;}
+.owl-cat-nex-pre-img {cursor: pointer;}
+.load_more_pro{cursor: pointer;}
+/*added for the homepage middle section ends here*/
+/*adding the search box css start here */
+/* .search-div{margin-top:16px; float:right;}  */
+.search-div {float: right; margin-top: -33px; margin-right: -12px;}
+.search-tiem{width:275px; height:33px; border:1px solid #e1e1e1; padding:0 40px 0 10px;margin-top: 10px;}
+.search-img {background: url(../img/search-icon.png) no-repeat scroll center top;
+  border: medium none;bottom: 0px;height: 29px;position: relative;right: 25px;width: 17px;}
+/*adding the search box css ends here */
+
+.sky-form .input input, .sky-form .select select, .sky-form .textarea textarea, .sky-form .radio i, .sky-form .checkbox i, .sky-form .toggle i, .sky-form .icon-append, .sky-form .icon-prepend {
+  border-color: #333 !important;}
+.log-reg-v3 .login-input span, .log-reg-v3 .login-input input {border-color:#333 !important;}
+/*.margin-bottom-20 {background: #fff !important;} */
+.color-purple {color: #a52618 !important;}
+.btn-u.btn-u-cust {background: #a52618 !important;}
+.form-area .form-control {margin-bottom: 6px;}
+.register-button:focus{color:#fff;}
+
+h4 {color: #333 !important;}
+.service-in {background: #1e2a41 none repeat scroll 0 0;}
+.service-block-v3 .counter {color: #fff!important;}
+#layerslider * {font-family: Lato,"Open Sans",sans-serif;}
+.sky-form .icon-append, .sky-form .icon-prepend {color: #333 !important;}
+footer {padding: 10px 10px 0; height:auto!important;}
+.list-unstyled.who a {color: #333;}
+.sky-form .button {background: #a52618; cursor: pointer;}
+
+.col-md-12 > p {font-size: 14px;}
+.col-md-12 > ul > li {font-size: 14px; line-height:28px;}
+.pull-left > i {color: #fff;font-weight: 500; font-style: normal;}
+figure h4 { margin:0px !important;}
+
+/* order Form */
+.form-add{padding-top:15px; line-height:26px;}
+.topform-add{padding-top:20px;}
+.order-form-input{border-bottom:1px solid #999;border-left:none;border-right:none;border-top:none; width:100%; height:36px; background:none; padding-left:10px; border-radius:0px;}
+.form-title{text-transform:uppercase; font-size:14px;}
+.font-tyle{font-size:18px; padding-top:10px;}
+.tc-title{margin:0px; padding:0px 0 0 20px;}
+.tc-title li{padding-bottom:15px;}
+#submit_dna{margin-bottom:100px;}
+/* order Form */
+.breeding_detail p {
+    line-height: 28px;
+    margin-bottom: 0;
+}
+.breed_checkbox {
+    float: left;
+    margin-top: 22px;
+}
+.breed_checkbox input[type=radio] { 
+  padding:0;
+  margin:0;
+  width:16px;
+  height:16px; 
+  position:absolute;
+  left:15px;
+  bottom: 12px;
+  opacity:0
+}
+
+.breed_checkbox input[type=radio] + label {
+  background:rgba(0, 0, 0, 0) url("../img/gr_custom-inputs.png") no-repeat scroll 0 -41px; 
+  width:25px;
+  height:16px;
+}
+.breed_checkbox input[type=radio]:checked + label {
+  background-position:0 -121px;
+}
+.final_price {
+    float: left;
+    font-size: 24px;
+    line-height: 50px;
+}
+.form-horizontal .control-label {
+    color: #333;
+    font-weight: bold;
+}
+.modal-body {
+    padding: 15px;
+}
+a.payment_cancel {
+    color: blue;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+.bootbox.modal {
+	text-align:center
+}
+.bootbox.modal:before {
+	content:'';
+	display:inline-block;
+	height:100%;
+	width:0;
+	margin-left:-1em;
+	vertical-align:middle
+}
+.bootbox.modal.fade:not(.animated) .modal-dialog {
+	opacity:0;
+	-webkit-transform:translateY(-150%);
+	-ms-transform:translateY(-150%);
+	transform:translateY(-150%);
+	-webkit-transition:all .5s linear .5s;
+	transition:all .5s linear .5s
+}
+.bootbox.modal.fade.in:not(.animated) .modal-dialog {
+	opacity:1;
+	-webkit-transform:translateY(0);
+	-ms-transform:translateY(0);
+	transform:translateY(0);
+	-webkit-transition:all .5s;
+	transition:all .5s
+}
+.bootbox.modal.in:not(.fade) {
+	opacity:1;
+	-webkit-transition:opacity .5s;
+	transition:opacity .5s
+}
+.bootbox.modal:not(.fade) {
+	opacity:0;
+	-webkit-transition:opacity .5s linear .5s;
+	transition:opacity .5s linear .5s
+}
+.bootbox .modal-dialog {
+	display:inline-block;
+	vertical-align:middle;
+	text-align:left;
+	margin-top:-1%;
+}
+.bootbox .modal-dialog.animated {
+	-webkit-animation-duration:.7s;
+	animation-duration:.7s
+}
+.bootbox .modal-header {
+	padding:15px;
+	position:relative;
+	border:0
+}
+.bootbox .modal-header:after {
+	content:'';
+	position:absolute;
+	bottom:0;
+	left:15px;
+	right:15px;
+	height:1px;
+	border-bottom:1px solid rgba(0,0,0,0.1)
+}
+.bootbox .modal-footer {
+	background-color:rgba(0,0,0,0.025);
+	color:#5c7174;
+	border-color:rgba(0,0,0,0.04);
+	border-top-left-radius:2px;
+	border-top-right-radius:2px
+}
+.bootbox .modal-title {
+	font-size:18px;
+	font-weight:300
+}
+.bootbox .modal-body {
+	min-height:90px
+}
+.bootbox .modal-body .close, .bootbox .modal-header .close {
+	top:auto;
+	right:auto;
+	background-color:transparent!important
+}
+.bootbox .modal-content {
+	box-shadow:none;
+	border-radius:2px
+}
+.bootbox .modal-footer {
+	padding:10px 15px;
+	border-bottom-left-radius:2px;
+	border-bottom-right-radius:2px
+}
+.bootbox .modal-backdrop.in {
+	opacity:.75;
+}
+.free_month {
+  background: #333333 none repeat scroll 0 0;
+  color: green;
+  font-size: 26px;
+  color: #b8b8b8;
+  font-style: italic;
+  line-height: 60px;
+}
+.db-pricing-eleven.popular .price.price-cross{
+    font-size: 30px;
+    padding: 28px 0 0;
+}
+.price.price-cross {
+    font-size: 30px;
+    padding: 18px 0 0 0px;
+}
+.db-pricing-eleven .price.price-cross small {
+    margin-top: 0px;
+}
+.db-pricing-eleven .price.price-cross small {
+    margin-top: 5px;
+}
+.btn-u.btn-u-update.btn-block.margin-bottom-20.btn-labeled.fa.fa-check-circle.submitter {
+    background: #00a65a none repeat scroll 0 0 !important;
+}
+.owner_name {
+    display: block;
+}
+.demo-2.effect {
+    list-style: outside none none;
+}
+.demo-2 {
+    position:relative;
+    width:100%;
+    height:220px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:rgba(30, 42, 65, 0.9)
+}
+.demo-2 p,.demo-2 h2 {
+    color:#fff;
+    padding:10px;
+    left:-20px;
+    top:20px;
+    position:relative
+}
+.demo-2 p {
+    font-family:'Lato';
+    font-size:12px;
+    line-height:18px;
+    margin:0
+}
+.demo-2 h2 {
+    font-size:20px;
+    line-height:24px;
+    margin:0;
+    font-family:'Lato'
+}
+.effect .vendor_img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    margin:-12px 0;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+}
+.effect .vendor_img.top:hover {
+    bottom:-60px;
+    padding-top:65px
+}
+h2.zero,p.zero {
+    margin:0;
+    padding:0
+}
+body.noScroll, html.noScroll{
+	overflow:hidden !important;
+}
+ul#female_horse_size_id, ul#male_horse_size_id {
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.form-optional{
+	background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+.nav.navbar-nav.navbar-right li ul {
+    display: none;
+	position: absolute;
+    width: 200px;
+    right: 0px;
+	background: rgba(30, 42, 65, 0.9) none repeat scroll 0 0;
+    color: #fff;
+    padding: 0 0;
+    text-align: right;
+}
+.nav.navbar-nav.navbar-right li > a {
+    cursor: pointer;
+}
+.nav.navbar-nav.navbar-right li:hover ul {
+    display: block;
+    list-style: none;
+}
+.nav.navbar-nav.navbar-right li:hover ul li a {
+    line-height: 50px;
+    padding: 0 15px;
+}
+.btn-block.btn-labeled.login_btn {
+    width: 110px;
+}
+::-webkit-scrollbar-thumb {background: #a9a9a9 !important; /* Old browsers */background: -moz-linear-gradient(top,  #a9a9a9 0%, #a9a9a9 100%) !important; /* FF3.6+ */background: #a9a9a9 !important; /* Chrome,Safari4+ */background: #a9a9a9 !important; /* Chrome10+,Safari5.1+ */background: #a9a9a9 !important; /* Opera 11.10+ */background: -ms-linear-gradient(top,  #a9a9a9 0%,#a9a9a9 100%) !important; /* IE10+ */background: #a9a9a9 !important; /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a9a9', endColorstr='#a9a9a9',GradientType=0 ) !important; /* IE6-9 */}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #a9a9a9 !important; 
+}
+@media only screen 
+and (max-width : 991px) {
+.nav.navbar-nav.navbar-right li ul {
+    background: none;
+    color: #fff;
+    display: block;
+    list-style: outside none none;
+    padding: 0;
+    position: unset;
+    right: 0;
+    text-align: center;
+    width: 100%;
+}
+.nav.navbar-nav.navbar-right li > a {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    line-height: 35px;
+}
+.nav.navbar-nav.navbar-right li:hover ul li a{line-height:35px;padding:0px;}
+.search-tiem{margin-top:0px;}
+.nav.navbar-nav.navbar-right li a.no-loginlink {
+    display: none;
+}
+.nav.navbar-nav.navbar-right li ul li > a {
+    padding: 0px;
+}
+}
+@media only screen 
+and (max-width : 640px) {
+.horse-name {width: 100%;}
+.section-02 {padding: 50px 10px;}
+.read-more {padding-bottom: 20px;}
+.section-03 {padding: 50px 10px;}
+}
+@media only screen 
+and (max-width : 480px) {
+.horse-name {width: 82%;}
+.section-02 {padding: 50px 10px;}
+.read-more {padding-bottom: 20px;}
+.section-03 {padding: 50px 10px;}
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 768px)
+and (orientation : landscape) {
+.banner-title {font-size: 6em; padding-top: 4em;}
+.login-part {background: rgba(0,0,0,0.8);}
+.login-part li, .login-part li a {padding: 0 4px;}
+
+.search-f {width: 290px; margin:0 auto;}
+.input-box {width: 160px;}
+.horse-sale-tab li {float: left;margin: 5px 0 5px 13px;width: 95%;}
+.horse-sale-tab li a {width: 100%; padding: 12px 0px; text-align:center; float:left;}
+
+.navbar-nav {background:#000;}
+.horse-sale-title {margin-top:0px;}
+.login-part li, .login-part li a{font-size:12px;}
+.navbar-fixed-top, .navbar-fixed-bottom {position: relative;}
+.navbar {margin-bottom: 0px;}
+.search-div {margin-top: 0px; float:none;text-align:center;}
+.address-t li {text-align: center;}
+.footer-link li{list-style:none;}
+.footer-logo {text-align: center; width: 100%;}
+
+.photo-grid img {width: 100%;}
+.term-title {padding-right: 30px;}
+.filter-by {width: 100%; margin-bottom: 10px;}
+.photo-grid figure {width: 100%;}
+
+
+.db-pricing-eleven ul li {padding: 10px 0px 0px 30px;}
+
+
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 768px) 
+and (orientation : portrait) {
+.banner-title {font-size: 5em; padding-top: 4em;}
+.login-part {background: rgba(0,0,0,0.8);}
+.login-part li, .login-part li a {padding: 0 3px;}
+
+.section-02 {padding: 50px 10px;}
+.read-more {padding-bottom: 20px;}
+.section-03 {padding: 50px 10px;}
+.why-content{width:100%;}
+.horse-name {width: 100%;}
+
+.search-f {width: 290px;}
+.input-box {width: 160px;}
+.horse-sale-tab li {float: left;margin: 5px 0 5px 13px;width: 95%;}
+.horse-sale-tab li a {width: 100%; padding: 12px 0px; text-align:center; float:left;}
+
+.navbar-nav {background:#000;}
+.horse-sale-title {margin-top:0px; padding:0px;}
+.login-part li, .login-part li a{font-size:12px;}
+.navbar-fixed-top, .navbar-fixed-bottom {position: relative;}
+.navbar {margin-bottom: 0px;}
+.search-div {margin-top: 0px; float:none;text-align:center;}
+.address-t li {text-align: center;}
+.footer-link li{list-style:none;}
+.footer-logo {text-align: center; width: 100%;}
+
+.photo-grid img {width: 330px;}
+.term-title {padding-right: 30px;}
+.filter-by {width: 100%; margin-bottom: 10px;}
+.photo-grid figure {width: 100%;}
+
+.top-search-div{float: none; margin-top: 0px; margin-right: 0px;}
+.db-pricing-eleven ul li {padding: 10px 0px 0px 30px;}
+
+
+}
